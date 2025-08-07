@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<full-backup-content>
+    <!-- Include user settings and preferences -->
+    <include domain="sharedpref" path="."/>
+    <include domain="database" path="photokik_database"/>
+    
+    <!-- Exclude sensitive data -->
+    <exclude domain="database" path="photokik_database-wal"/>
+    <exclude domain="database" path="photokik_database-shm"/>
+    
+    <!-- Exclude temporary files -->
+    <exclude domain="file" path="temp/"/>
+    <exclude domain="cache" path="."/>
+    
+    <!-- Exclude processed photos (they can be re-processed) -->
+    <exclude domain="external" path="photos/"/>
+</full-backup-content>

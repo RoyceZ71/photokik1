@@ -1,0 +1,39 @@
+{
+  "appId": "com.mocha.photokik",
+  "appName": "PhotoKik",
+  "webDir": "public",
+  "server": {
+    "androidScheme": "https"
+  },
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 3000,
+      "backgroundColor": "#1e1b4b",
+      "androidSplashResourceName": "splash",
+      "androidScaleType": "CENTER_CROP",
+      "showSpinner": false,
+      "splashFullScreen": true,
+      "splashImmersive": true
+    },
+    "StatusBar": {
+      "style": "DARK",
+      "backgroundColor": "#1e1b4b",
+      "overlaysWebView": false
+    },
+    "Camera": {
+      "permissions": ["camera", "photos"]
+    },
+    "Filesystem": {
+      "permissions": ["photos"]
+    },
+    "Permissions": {
+      "photos": "required"
+    },
+    "Haptics": {
+      "enabled": true
+    },
+    "App": {
+      "restoredState": true
+    }
+  }
+}

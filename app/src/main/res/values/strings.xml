@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PhotoKik</string>
+    <string name="app_description">Swipe to organize your photos instantly</string>
+    <string name="swipe_left_kik">Swipe left to kik</string>
+    <string name="swipe_right_keep">Swipe right to keep</string>
+    <string name="gallery">Gallery</string>
+    <string name="trash">Trash</string>
+    <string name="settings">Settings</string>
+    <string name="take_photo">Take Photo</string>
+    <string name="permission_camera">Camera permission needed for taking photos</string>
+    <string name="permission_storage">Storage permission needed for accessing photos</string>
+</resources>

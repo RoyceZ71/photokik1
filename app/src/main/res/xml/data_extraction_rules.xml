@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data-extraction-rules>
+    <cloud-backup>
+        <!-- Include user settings -->
+        <include domain="sharedpref" path="."/>
+        <include domain="database" path="photokik_database"/>
+        
+        <!-- Exclude sensitive files -->
+        <exclude domain="file" path="photos/"/>
+        <exclude domain="cache" path="."/>
+    </cloud-backup>
+    
+    <device-transfer>
+        <!-- Allow settings transfer between devices -->
+        <include domain="sharedpref" path="."/>
+        <include domain="database" path="photokik_database"/>
+        
+        <!-- Exclude photos from device transfer -->
+        <exclude domain="file" path="photos/"/>
+        <exclude domain="external" path="."/>
+    </device-transfer>
+</data-extraction-rules>
